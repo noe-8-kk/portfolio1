@@ -1,0 +1,83 @@
+<!-- まずは宣言 -->
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+  <!-- 言語の設定 -->
+  <meta charset="utf-8">　
+  <!-- ページタイトル -->
+  <title>ポートフォリオ（仮）</title>
+  <!-- CSSの読み込み -->
+  <!-- CSSのファイルタイトルは「stylesheet.css」にすること -->
+  <link rel="stylesheet" type="text/css" href="reset.css">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <!-- ロゴの読み込み -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <!-- フォントの読み込み -->
+  <link href="https://fonts.googleapis.com/css?family=Lato|Slabo+27px" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+  <!-- jQueryの読み込み -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="head-area">
+      <h1>ポートフォリオ(仮)</h1>
+      <ul>
+        <li class="h-list"><a href="#about">about</a></li>
+        <li class="h-list"><a href="#plofole">profile</a></li>
+        <li class="h-list"><a href="#work">work</a></li>
+        <li class="h-list"><a href="#contact">contact</a></li>
+      </ul>
+    </div>
+  </header>
+  <div class="main">
+    <div class="container">
+        <div class="go_img img_about"></div>
+      <div class="m_b">
+        <div class="m-c" id="about">
+          <h2>about</h2>
+          <p>WEBデザイナー志望者の徒然なるままに作ったものを置いていくところです</p>
+          <p>このサイト自体テストを兼ねているので、至らないところ多々ありますが、成長を見守っていただければ幸いです。</p>
+        </div>
+      </div>
+
+        <div class="go_img img_prof"></div>
+        <div class="m_b">
+          <div class="m-c" id="plofole">
+            <h2>profile</h2>
+            <p>Learning : HTML CSS javaScript jQuery</p>
+            <p>Use : ATOM , Dreamweaver , Photoshop , Illustlator</p>
+            <p>Love:鹿島アントラーズ　ルネ・マグリット　中田裕二</p>
+          </div>
+        </div>
+
+        <div class="go_img img_work"></div>
+        <div class="m_b" >
+          <div class="m-c" id="work">
+            <h2>work</h2>
+            <!-- JSで別窓表示にしたいねん -->
+            <!-- 写真とかデザインとか別サイトとか載せれるようにしたいねん -->
+          </div>
+        </div>
+
+        <div class="go_img img_contact"></div>
+        <div class="m_b" >
+          <div class="m-c" id="contact">
+            <h2>contact</h2>
+            <!-- メルホに飛ぶようにしたってや -->
+          </div>
+        </div>
+
+    </div>
+  </div>
+  <p id="pageTop"><a href="#"><i class="fa fa-chevron-up"></i></a></p>
+  <footer>
+    <div>
+      <p>© 2018 E.Konno All rights reserved.</p>
+    </div>
+  </footer>
+  <!-- body終了間際にscriptの読み込み -->
+  <script src="script.js"></script>
+</body>
+</html>
