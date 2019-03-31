@@ -6,11 +6,12 @@
   <!-- 言語の設定 -->
   <meta charset="utf-8">　
   <!-- ページタイトル -->
-  <title>ポートフォリオ（仮）</title>
+  <title>MY PORTFOLIO</title>
   <!-- CSSの読み込み -->
-  <!-- CSSのファイルタイトルは「stylesheet.css」にすること -->
-  <link rel="stylesheet" type="text/css" href="reset.css">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="css/lightbox.css">
+	
   <!-- ロゴの読み込み -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <!-- フォントの読み込み -->
@@ -20,64 +21,206 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
 <body>
+	
+<!-------HEADER	------->
+	
   <header>
     <div class="head-area">
-      <h1>ポートフォリオ(仮)</h1>
+      <h1>MY PORTFOLIO</h1>
       <ul>
-        <li class="h-list"><a href="#about">about</a></li>
-        <li class="h-list"><a href="#plofole">profile</a></li>
-        <li class="h-list"><a href="#work">work</a></li>
-        <li class="h-list"><a href="#contact">contact</a></li>
+        <li class="h-list"><a href="#about">About</a></li>
+        <li class="h-list"><a href="#profile">Profile</a></li>
+        <li class="h-list"><a href="#works">Works</a></li>
+        <li class="h-list"><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </header>
-  <div class="main">
-    <div class="container">
-        <div class="go_img img_about"></div>
-      <div class="m_b">
-        <div class="m-c" id="about">
-          <h2>about</h2>
-          <p>WEBデザイナー志望者の徒然なるままに作ったものを置いていくところです</p>
-          <p>このサイト自体テストを兼ねているので、至らないところ多々ありますが、成長を見守っていただければ幸いです。</p>
-        </div>
-      </div>
-
-        <div class="go_img img_prof"></div>
-        <div class="m_b">
-          <div class="m-c" id="plofole">
-            <h2>profile</h2>
-            <p>Learning : HTML CSS javaScript jQuery</p>
-            <p>Use : ATOM , Dreamweaver , Photoshop , Illustlator</p>
-            <p>Love:鹿島アントラーズ　ルネ・マグリット　中田裕二</p>
-          </div>
-        </div>
-
-        <div class="go_img img_work"></div>
-        <div class="m_b" >
-          <div class="m-c" id="work">
-            <h2>work</h2>
-            <!-- JSで別窓表示にしたいねん -->
-            <!-- 写真とかデザインとか別サイトとか載せれるようにしたいねん -->
-          </div>
-        </div>
-
-        <div class="go_img img_contact"></div>
-        <div class="m_b" >
-          <div class="m-c" id="contact">
-            <h2>contact</h2>
-            <!-- メルホに飛ぶようにしたってや -->
-          </div>
-        </div>
-
+	
+	
+<!-------Main Contents	------->
+	
+	
+<div class="container">
+	
+<!----------About	--------->
+	
+	
+	
+	
+	 <div class="fix bg1 bg_fadein">
+    </div> 
+  
+	
+    <div class="scroll_bg">
+        <div id="about" class="main_contents">
+           <h2 class="fadein">About</h2>
+			<div class="fadein">
+			<p>WEBデザイナー志望者が気ままに作ったものを置いていくところです</p>
+			<p>このサイト自体テストを兼ねているので、至らないところ多々ありますが、成長を見守っていただければ幸いです</p>
+			<p>since:2018.08.18~</p>
+			</div>
+        </div> 
     </div>
-  </div>
+ 
+	
+	
+	
+	
+<!---------	Profile---------->
+	
+	
+	
+	
+	
+    <div class="fix bg2">
+    </div> 
+  
+    <div class="scroll_bg">
+        <div id="profile" class="main_contents">
+           <h2 class="fadein">Profile</h2>
+			<div class="fadein">
+			<h3>Leaning</h3>
+			<p>HTML CSS javaScript jQuery Wordpress</p>
+			<h3>Use Tools</h3>
+			<p>Dreamweaver Photoshop Illustlator XD</p>
+			<h3>Love</h3>
+			<p>両親 鹿島アントラーズ ルネ・マグリット 中田裕二</p>
+			<h3>Hobby</h3>
+			<p>推理小説を読む サッカー観戦 絵を描くこと 一人で行くレイトショー</p>
+			</div>
+        </div> 
+    </div> 
+ 
+	
+	
+	
+	
+<!----------	Works--------->
+	
+	
+	
+	
+	
+	
+    <div class="fix bg3">
+    </div> 
+  
+    <div class="scroll_bg_w">
+        <div id="works" class="main_contents">
+           <h2 class="fadein">Works</h2>
+			<h3>Bunner</h3>
+			<div class="gallary">
+			<a href="img/バナー1.png" data-lightbox="bunner"><img src="img/バナー練習1.jpg"></a>
+			<a href="img/バナー2.png" data-lightbox="bunner"><img src="img/バナーお題2.jpg"></a>
+			<a href="img/バナー3.png" data-lightbox="bunner"><img src="img/バナー3.jpg"></a>
+			</div>
+			
+			<h3>Web Sites</h3>
+			<div class="gallary">
+			<a href="https://noe-8-kk.github.io/portfolio2/" target="_blank"><img src="img/magritte.png"></a>
+			</div>
+
+			<h3>Illust/Logo</h3>
+			<p>Creating NOW!!</p>
+			
+        </div> 
+    </div> 
+	
+	
+	
+	
+	
+	
+	
+<!--------	Contact---------->
+
+	
+	
+	
+	
+	
+    <div class="fix bg4">
+    </div> 
+  
+    <div class="scroll_bg_last">
+        <div id="contact" class="main_contents">
+           <h2 class="fadein">Contact</h2>
+			
+			<div class="tb_cell mail_form">
+			<form id="form" action="mailform.php" method="post">
+				<div class="row">
+<!--					name-->
+					<div class="cell">
+						<label>Name</label>
+					</div>
+				    <div class="cell">
+						<input type="text" name="name" required>
+					</div>
+				</div>	
+<!--					e-mail-->
+				<div class="row">
+					<div class="cell">
+						<label>e-mail</label>
+					</div>
+				    <div class="cell">
+						<input type="e-mail" name="e-mail" required>
+					</div>
+				</div>
+<!--					comment-->
+				<div class="row">
+					<div class="cell">
+						<label>comment</label>
+					</div>
+				    <div class="cell">
+						<textarea naem="comment" required></textarea>&nbsp;
+					</div>
+				</div>
+<!--					button-->
+				<div class="row">
+					<div class="cell">
+						&nbsp;
+					</div>
+					<div class="cell">
+						<button type="submit" id="s_btn" name="action" value="post">送　信</button>
+						<button type="reset" id="r_btn">リセット</button>
+					</div>
+				    
+				</div>
+			</form>
+			
+			
+			</div>
+        </div> 
+    </div> 
+	
+	
+	
+	
+	
+</div>	
+	
+<!-----上に戻るボタン	----->
+	
   <p id="pageTop"><a href="#"><i class="fa fa-chevron-up"></i></a></p>
+	
+	
+	
+<!-------	FOOTER-------->
   <footer>
     <div>
-      <p>© 2018 E.Konno All rights reserved.</p>
+      <p>© 2019 E.Konno All rights reserved.</p>
     </div>
   </footer>
+	
+	
   <!-- body終了間際にscriptの読み込み -->
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/lightbox.js"></script>
+	<script>
+		lightbox.option({
+　　　　	'wrapAround': true,
+　　　　	'alwaysShowNavOnTouchDevices': true
+		})
+	</script>
 </body>
 </html>
