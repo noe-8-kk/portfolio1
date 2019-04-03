@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*--------スマホ(375~767px)------*/
+
+@media(max-width:767px){
+/*	メインメニュー切り替え*/
+	.h-list{
+		display: none;
+	}
+	/*	コンテンツ幅切り替え*/
+	.main_contents{
+		width:250px;
+	}
+	.gallary{
+		width:250px;
+	}
+	/*	トップ文字サイズへんこう*/
+	.head-area h1{
+		font-size:0.8em;
+		padding:10px 5px
+	}
+	/*	背景切り替え*/
+	.bg1 {
+  		background-image: url("../img/1sm.jpg");
+  		opacity: 0;
+		}
+		.bg2 {
+  		background-image: url("../img/books_sm.jpg");
+		}
+		.bg3 {
+  		background-image: url("../img/work_sm.jpg");
+		}
+		.bg4 {
+  		background-image: url("../img/girls_sm.jpg");
+		}
+}
+
+
+
+
+
+/*---------タブレット(768~)----------*/
+@media (min-width: 768px) {
+/*	トップ文字サイズへんこう*/
+	.head-area h1{
+		font-size:1.0em;
+		padding:10px 5px
+	}
+/*	コンテンツ幅切り替え*/
+	.main_contents{
+		width:500px;
+	}
+	.gallary{
+		width:500px;
+	}
+/*	メニューは羅列*/
+	.humg{
+    display: none;
+	}	
+
+/*	メルホ*/
+.tb-cell {
+  width: 800px;
+}
+.tb-cell .row {
+  display: table-row;
+}
+.tb-cell .row .cell {
+  display: table-cell;
+  border: 1px solid #f2f2f2;
+  padding: 10px;
+  vertical-align: middle;
+  color: #ddd;
+}
+.tb-cell .row .cell:nth-child(odd) {
+  width: 200px;
+}
+.tb-cell .row .cell:nth-child(even) {
+  width: 600px;
+}
+input[type="text"],
+input[type="e-mail"] {
+  width: 300px;
+}
+textarea {
+  width: 580px;
+}
+}
