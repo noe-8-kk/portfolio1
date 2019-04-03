@@ -45,6 +45,22 @@ $(function(){
 	$('.bg_fadein').animate({
     	opacity: 100}, 40000);
 	
+//	ハンバーガーメニュー
+	$(function(){
+	  $('.toggle').click(function(){
+		$(this).toggleClass('active');
+		  if($(this).hasClass('active')){
+			 $('.nav-content').addClass('active'); 
+			 }else{
+				 $('.nav-content').removeClass('active');
+			 }
+	  });
+	  });
+	
+	
+	
+	
+	
 });
 
 
