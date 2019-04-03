@@ -11,7 +11,9 @@
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
   <link rel="stylesheet" type="text/css" href="css/lightbox.css">
-	
+  <link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<!--レスポンシブ	-->
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
   <!-- ロゴの読み込み -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <!-- フォントの読み込み -->
@@ -33,10 +35,24 @@
         <li class="h-list"><a href="#works">Works</a></li>
         <li class="h-list"><a href="#contact">Contact</a></li>
       </ul>
-    </div>
+<!--		スマホ用ハンバーガー-->
+		<div class="humg">
+		<div class="nav-content">
+			<ul>
+			<li class="nav-menu"><a href="#about">About</a></li>
+        	<li class="nav-menu"><a href="#profile">Profile</a></li>
+        	<li class="nav-menu"><a href="#works">Works</a></li>
+        	<li class="nav-menu"><a href="#contact">Contact</a></li
+			</ul>
+		</div>
+			<div class="toggle">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+	</div>		
   </header>
-	
-	
 <!-------Main Contents	------->
 	
 	
@@ -108,7 +124,7 @@
     <div class="scroll_bg_w">
         <div id="works" class="main_contents">
            <h2 class="fadein">Works</h2>
-			<h3>Bnner</h3>
+			<h3>Banner</h3>
 			<div class="gallary">
 			<a href="img/バナー1.png" data-lightbox="bunner"><img src="img/バナー練習1.jpg"></a>
 			<a href="img/バナー2.png" data-lightbox="bunner"><img src="img/バナーお題2.jpg"></a>
@@ -145,7 +161,7 @@
     <div class="scroll_bg_last">
         <div id="contact" class="main_contents">
            <h2 class="fadein">Contact</h2>
-		<p>※送れません。枠組みだけです。</p>
+		<p>※送れません。枠組みだけです。</p>	
 			<div class="tb_cell mail_form">
 			<form id="form" action="mailform.php" method="post">
 				<div class="row">
