@@ -59,20 +59,6 @@
 	.humg{
     display: none;
 	}
-	/*	背景切り替え*/
-	.bg1 {
-  		background-image: url("../img/1sm.jpg");
-  		opacity: 0;
-		}
-		.bg2 {
-  		background-image: url("../img/books_smm.jpg");
-		}
-		.bg3 {
-  		background-image: url("../img/work_smm.jpg");
-		}
-		.bg4 {
-  		background-image: url("../img/girls_smm.jpg");
-		}
 
 /*	メルホ*/
 .tb-cell {
