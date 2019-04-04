@@ -150,10 +150,12 @@ header{
 
 /* -----Main Contents----- */
 
+/*
 .container{
 	width:100%;
 	height:100%;
 }
+*/
 
 .main_contents{
 	height:400px;
@@ -177,8 +179,11 @@ header{
 
 
 /*-----背景の設定-----*/
+@media(min-width:981px){
+	
 
 .fix {
+	position: relative;
     min-height: 100vh;
     background-size: cover;
     background-attachment: fixed;
@@ -200,6 +205,8 @@ header{
 .bg4 {
   background-image: url("../img/girls.jpg");
 }
+}
+
   
 .scroll_bg {
     min-height: 100%;
@@ -207,6 +214,7 @@ header{
 	height:800px;
 	box-shadow:0 10px 10px rgba(0,0,0,0.3);
 	position: relative;
+	z-index: 2;
 }
 .scroll_bg_w {
     min-height: 100%;
@@ -214,13 +222,14 @@ header{
 	height:1000px;
 	box-shadow:0 10px 10px rgba(0,0,0,0.3);
 	position: relative;
+	z-index: 2;
 }
 
 .scroll_bg_last {
     min-height: 100%;
 	background-color: #EA8A8A;
 	height:800px;
-	z-index: 2;
+	z-index:2;
 }
 
 /*-----About-----*/
@@ -319,6 +328,7 @@ button[type="button"],button[type="submit"]:hover{
 /* ---トップに戻るボタン--- */
 #pageTop {
   position: fixed;
+	z-index: 3;
   bottom: 30px;
   right: 30px;
 }
@@ -327,7 +337,6 @@ button[type="button"],button[type="submit"]:hover{
 }
 #pageTop a {
   display: block;
-  z-index: 3;
   padding: 8px ;
   border-radius: 30px;
   width: 35px;
