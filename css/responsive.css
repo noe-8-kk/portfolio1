@@ -96,63 +96,29 @@ textarea {
     min-height: 100vh;
     content: "";
     z-index: -1;
-/*
-    content: "";
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    -webkit-transform: translate3d(0, 0, -1px);
-    transform: translate3d(0, 0, -1px);
-    width: 100%;
-    min-height: 100vh;
-    -webkit-background-size: cover;
-    background-size: cover;
-    z-index: -1;
-*/
   }
+/*
   .fix.bg1::before {
       background-image: url(../img/1sm.jpg);
   }
 		
-  .fix.bg2::before {
-      background-image: url(../img/books_smm.jpg);
-	  top:1000px;
-  }
-  .fix.bg3::before {
-      background-image: url(../img/work_smm.jpg);
-	  z-index: -3;
-  }
-	
-/*
-	 .fix.bg1:before {
-	background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    min-height: 100vh;
-    content: "";
-    z-index: -1;
-    }
-     スマホの場合は同じ要素の背景画像を変更する 
-    .fix.bg1.bgA:before{
-     background-image: url("../img/1.jpg");
-		opacity: 100%;
-    }
-     .fix.bg1.bgB:before{
-     background-image: url("../img/books.jpg");
-    }
-    .fix.bg1.bgC:before{
-     background-image: url("../img/work.jpg");
-    }
-    .fix.bg1.bgD:before{
-     background-image: url("../img/girls.jpg");
-    }
+		
 */
+    /* スマホの場合は同じ要素の背景画像を変更する */
+    .fix.bg1.bgA::before{
+     background-image: url("../img/1sm.jpg");
+	
+    }
+     .fix.bg1.bgB::before{
+     background-image: url("../img/books_smm.jpg");
+    }
+    .fix.bg1.bgC::before{
+     background-image: url("../img/work_smm.jpg");
+    }
+    .fix.bg1.bgD::before{
+     background-image: url("../img/girls_smm.jpg");
+    }
+
    
   }
 		
