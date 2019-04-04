@@ -179,7 +179,7 @@ header{
 /*-----背景の設定-----*/
 
 .fix {
-    min-height: 100vh;
+    min-height: 100%;
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
