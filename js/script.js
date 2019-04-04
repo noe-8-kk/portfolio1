@@ -58,43 +58,47 @@ $(function(){
 	
 	
       
-//      var beforeBg = '';
-//      $(window).on('load scroll touchmove', function() {
-//          $scrollTop = $(window).scrollTop();
-//          $changePoint1 = $('.bg1').get(0).offsetTop;
-//          $changePoint2 = $('.bg2').get(0).offsetTop;
-//          $changePoint3 = $('.bg3').get(0).offsetTop;
-//		  if ($scrollTop > $changePoint3){
-//              if(beforeBg !=="bgD"){
-//                $('.fix.bg1').removeClass('bgC');
-//                $('.fix.bg1').removeClass('bgE');
-//                $('.fix.bg1').addClass('bgD');
-//                beforeBg = 'bgD';
-//              }
-//           } else if ($scrollTop > $changePoint2){
-//              if(beforeBg !=="bgC"){
-//                $('.fix.bg1').removeClass('bgB');
-//                $('.fix.bg1').removeClass('bgD');
-//                $('.fix.bg1').addClass('bgC');
-//                beforeBg = 'bgC';
-//              }
-//	   } else if ($scrollTop > $changePoint1){
-//              if(beforeBg !=="bgB"){
-//                $('.fix.bg1').removeClass('bgA');
-//                $('.fix.bg1').removeClass('bgC');
-//                $('.fix.bg1').addClass('bgB');
-//                beforeBg = 'bgB';
-//              }
-//	   } else {
-//              if(beforeBg !=="bgA"){
-//                $('.fix.bg1').removeClass('bgB');
-//                $('.fix.bg1').addClass('bgA');
-//                beforeBg = 'bgA';
-//              }
-//              
-//           }
-//      });
-//	
+      var beforeBg = '';
+      $(window).on('load scroll touchmove', function() {
+          $scrollTop = $(window).scrollTop();
+          $changePoint1 = $('.bg2').get(0).offsetTop;
+          $changePoint2 = $('.bg3').get(0).offsetTop;
+          $changePoint3 = $('.bg4').get(0).offsetTop;
+		  if ($scrollTop > $changePoint3){
+              if(beforeBg !=="bgD"){
+                $('.fix.bg1').removeClass('bgC');
+				$('.fix.bg1').removeClass('bgA');
+                $('.fix.bg1').addClass('bgD');
+                beforeBg = 'bgD';
+              }
+           } else if ($scrollTop > $changePoint2){
+              if(beforeBg !=="bgC"){
+                $('.fix.bg1').removeClass('bgB');
+				$('.fix.bg1').removeClass('bgA');
+                $('.fix.bg1').removeClass('bgD');
+                $('.fix.bg1').addClass('bgC');
+                beforeBg = 'bgC';
+              }
+	   } else if ($scrollTop > $changePoint1){
+              if(beforeBg !=="bgB"){
+                $('.fix.bg1').removeClass('bgA');
+                $('.fix.bg1').removeClass('bgC');
+				$('.fix.bg1').removeClass('bgD');
+                $('.fix.bg1').addClass('bgB');
+                beforeBg = 'bgB';
+              }
+	   } else {
+              if(beforeBg !=="bgA"){
+                $('.fix.bg1').removeClass('bgB');
+				$('.fix.bg1').removeClass('bgD');
+				$('.fix.bg1').removeClass('bgC');
+                $('.fix.bg1').addClass('bgA');
+                beforeBg = 'bgA';
+              }
+              
+           }
+      });
+	
 	
 	
 	
