@@ -2,32 +2,8 @@
 /* CSS Document */
 
 
-/*--------スマホ(375~767px)------*/
-
-@media(max-width:767px){
-/*	メインメニュー切り替え*/
-	.h-list{
-		display: none;
-	}
-	/*	コンテンツ幅切り替え*/
-	.main_contents{
-		width:90%;
-	}
-	.gallary{
-		width:90%;
-	}
-	/*	トップ文字サイズへんこう*/
-	.head-area h1{
-		font-size:0.8em;
-		padding:10px 5px
-	}
-}
-
-
-
-
-/*---------タブレット(768~)----------*/
-@media (min-width: 768px) {
+/*---------タブレット(~1024)----------*/
+@media (max-width: 1024px) {
 /*	トップ文字サイズへんこう*/
 	.head-area h1{
 		font-size:1.0em;
@@ -40,42 +16,37 @@
 	.gallary{
 		width:80%;
 	}
-/*	メニューは羅列*/
-	.humg{
-    display: none;
-	}	
+
 
 /*	メルホ*/
-.tb-cell {
-  width: 800px;
+.tb_cell {
+  width: 500px;
 }
-.tb-cell .row {
+.row {
   display: table-row;
 }
-.tb-cell .row .cell {
+.row .cell {
   display: table-cell;
   border: 1px solid #f2f2f2;
   padding: 10px;
   vertical-align: middle;
   color: #ddd;
 }
-.tb-cell .row .cell:nth-child(odd) {
+.row .cell:nth-child(odd) {
   width: 200px;
 }
-.tb-cell .row .cell:nth-child(even) {
+.row .cell:nth-child(even) {
   width: 600px;
 }
 input[type="text"],
 input[type="e-mail"] {
-  width: 300px;
+  width: 480px;
 }
 textarea {
-  width: 580px;
-}
+  width: 480px;
 }
 	
-	@media(max-width:980px){
-		
+/*背景切り替え(~1024）*/
 	.fix {
     background-image: none;
     height: 100%;
@@ -97,13 +68,7 @@ textarea {
     content: "";
     z-index: -1;
   }
-/*
-  .fix.bg1::before {
-      background-image: url(../img/1sm.jpg);
-  }
-		
-		
-*/
+
     /* スマホの場合は同じ要素の背景画像を変更する */
     .fix.bg1.bgA::before{
      background-image: url("../img/1sm.jpg");
@@ -120,7 +85,54 @@ textarea {
     }
 
    
-  }
+	
+}
+
+/*--------スマホ(~480px)------*/
+
+@media(max-width:480px){
+/*	メインメニュー切り替え*/
+	.h-list{
+		display: none;
+	}
+	.humg{
+		display: block;
+	}
+	
+	/*	コンテンツ幅切り替え*/
+	.main_contents{
+		width:90%;
+	}
+	.gallary{
+		width:90%;
+	}
+	/*	トップ文字サイズへんこう*/
+	.head-area h1{
+		font-size:0.8em;
+		padding:10px 5px
+	}
+	.tb_cell {
+  		width: 300px;
+	}
+	.row .cell:nth-child(odd) {
+	  width: 100px;
+	}
+	.row .cell:nth-child(even) {
+	  width: 200px;
+	}
+	input[type="text"],
+	input[type="e-mail"] {
+	  width: 180px;
+	}
+	textarea {
+	  width: 180px;
+	}
+
+}
+
+
+
+
 		
 	
 	

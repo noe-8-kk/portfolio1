@@ -62,6 +62,10 @@ header{
 }
 
 /*ハンバーガー*/
+.humg{
+	display: none;
+}
+
 .nav-content{
 	position: fixed;
 	z-index: 11;
@@ -158,7 +162,7 @@ header{
 */
 
 .main_contents{
-	height:400px;
+	height:100%;
 	width:600px;
 	margin: auto;
 	padding:100px 0 ;
@@ -219,10 +223,11 @@ header{
 .scroll_bg_w {
     min-height: 100%;
 	background-color: #EA8A8A;
-	height:1000px;
+	height:1200px;
 	box-shadow:0 10px 10px rgba(0,0,0,0.3);
 	position: relative;
 	z-index: 2;
+	padding-bottom: 200px;
 }
 
 .scroll_bg_last {
@@ -248,12 +253,25 @@ header{
 
 /*-----------Works------------*/
 
+
+
 .gallary{
-	width:700px;
+	width:1000px;
 	margin:10px;
 }
 
-
+.g-cell{
+	display: table-cell;
+	border:1px solid #f2f2f2;
+	padding: 10px;
+	vertical-align: middle;
+}
+.g-cell:nth-child(odd){
+	width:100px;
+}
+.g-cell:nth-child(even){
+	width: 400px;
+}
 
 
 
@@ -261,14 +279,17 @@ header{
 /*-----Contact-----*/
 .tb_cell{
 	display: table;
-	width:300px;
+	width:700px;
 	margin:20px auto 40px;
 	text-align: left;
 }
-.row{
+label{
+	color: #2e0000;
+}
+.tb_cell.row{
 	display: table-row;
 }
-.row .cell{
+.tb_cell.row .cell{
 	display: table-cell;
 	border:1px solid #f2f2f2;
 	padding: 10px;
@@ -279,7 +300,7 @@ header{
 }
 
 .row .cell:nth-child(even){
-	width:200px;
+	width:600px;
 }
 .mail_form .row .cell{
 	padding: 5px;
@@ -293,12 +314,14 @@ header{
 
 input[type="text"],input[type="e-mail"]{
 	height:30px;
+	width: 500px;
 	font-size:16px;
 	background-color: #f2f2f2;
 	margin:5px;
 }
 textarea{
 	height:100px;
+	width:500px;
 	font-size: 16px;
 	background-color: #f2f2f2;
 	margin:5px;
