@@ -1,0 +1,138 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*---------タブレット(~1024)----------*/
+@media (max-width: 1024px) {
+/*	トップ文字サイズへんこう*/
+	.head-area h1{
+		font-size:1.0em;
+		padding:10px 5px
+	}
+/*	コンテンツ幅切り替え*/
+	.main_contents{
+		width:80%;
+	}
+	.gallary{
+		width:80%;
+	}
+
+
+/*	メルホ*/
+.tb_cell {
+  width: 500px;
+}
+.row {
+  display: table-row;
+}
+.row .cell {
+  display: table-cell;
+  border: 1px solid #f2f2f2;
+  padding: 10px;
+  vertical-align: middle;
+  color: #2e0000;
+}
+.row .cell:nth-child(odd) {
+  width: 200px;
+}
+.row .cell:nth-child(even) {
+  width: 300px;
+}
+input[type="text"],
+input[type="e-mail"] {
+  width: 280px;
+}
+textarea {
+  width: 280px;
+}
+	
+/*背景切り替え(~1024）*/
+	.fix {
+    background-image: none;
+    height: 100%;
+  }
+	.scroll_bg,.scroll_bg_last,.scroll_bg_w{
+	margin-top: 100vh;
+	}
+		
+  .fix::before {
+	background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    content: "";
+    z-index: -1;
+  }
+
+    /* スマホの場合は同じ要素の背景画像を変更する */
+    .fix.bg1.bgA::before{
+     background-image: url("../img/1sm.jpg");
+	
+    }
+     .fix.bg1.bgB::before{
+     background-image: url("../img/books_smm.jpg");
+    }
+    .fix.bg1.bgC::before{
+     background-image: url("../img/work_smm.jpg");
+    }
+    .fix.bg1.bgD::before{
+     background-image: url("../img/girls_smm.jpg");
+    }
+
+   
+	
+}
+
+/*--------スマホ(~480px)------*/
+
+@media(max-width:480px){
+/*	メインメニュー切り替え*/
+	.h-list{
+		display: none;
+	}
+	.humg{
+		display: block;
+	}
+	
+	/*	コンテンツ幅切り替え*/
+	.main_contents{
+		width:90%;
+	}
+	.gallary{
+		width:90%;
+	}
+	/*	トップ文字サイズへんこう*/
+	.head-area h1{
+		font-size:0.8em;
+		padding:10px 5px
+	}
+	.tb_cell {
+  		width: 300px;
+	}
+	.row .cell:nth-child(odd) {
+	  width: 100px;
+	}
+	.row .cell:nth-child(even) {
+	  width: 200px;
+	}
+	input[type="text"],
+	input[type="e-mail"] {
+	  width: 180px;
+	}
+	textarea {
+	  width: 180px;
+	}
+
+}
+
+
+
+
+		
+	
+	
