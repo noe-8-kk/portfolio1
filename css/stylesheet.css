@@ -160,7 +160,7 @@ header{
 	height:100%;
 	width:600px;
 	margin: auto;
-	padding:100px 0 0;
+	padding:100px 0;
 }
 
 .main_contents h2{
@@ -232,6 +232,9 @@ header{
 }
 
 /*-----About-----*/
+#about{
+	padding-bottom: 150px;
+}
 
 #about p{
 	line-height:2.5em;
@@ -271,6 +274,14 @@ header{
 
 
 /*-----Contact-----*/
+#contact{
+	height:80%;
+	width:600px;
+	margin: auto;
+	padding:100px 0 0;
+}
+
+
 .tb_cell{
 	display: table;
 	width:800px;
