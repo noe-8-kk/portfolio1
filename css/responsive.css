@@ -30,20 +30,20 @@
   border: 1px solid #f2f2f2;
   padding: 10px;
   vertical-align: middle;
-  color: #ddd;
+  color: #2e0000;
 }
 .row .cell:nth-child(odd) {
   width: 200px;
 }
 .row .cell:nth-child(even) {
-  width: 600px;
+  width: 300px;
 }
 input[type="text"],
 input[type="e-mail"] {
-  width: 480px;
+  width: 280px;
 }
 textarea {
-  width: 480px;
+  width: 280px;
 }
 	
 /*背景切り替え(~1024）*/

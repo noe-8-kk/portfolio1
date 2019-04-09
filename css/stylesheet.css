@@ -154,18 +154,13 @@ header{
 
 /* -----Main Contents----- */
 
-/*
-.container{
-	width:100%;
-	height:100%;
-}
-*/
+
 
 .main_contents{
 	height:100%;
 	width:600px;
 	margin: auto;
-	padding:100px 0 ;
+	padding:100px 0 0;
 }
 
 .main_contents h2{
@@ -183,7 +178,6 @@ header{
 
 
 /*-----背景の設定-----*/
-@media(min-width:981px){
 	
 
 .fix {
@@ -209,13 +203,12 @@ header{
 .bg4 {
   background-image: url("../img/girls.jpg");
 }
-}
+
 
   
 .scroll_bg {
     min-height: 100%;
 	background-color: #EA8A8A;
-	height:800px;
 	box-shadow:0 10px 10px rgba(0,0,0,0.3);
 	position: relative;
 	z-index: 2;
@@ -223,7 +216,7 @@ header{
 .scroll_bg_w {
     min-height: 100%;
 	background-color: #EA8A8A;
-	height:1200px;
+	height:100%;
 	box-shadow:0 10px 10px rgba(0,0,0,0.3);
 	position: relative;
 	z-index: 2;
@@ -231,6 +224,7 @@ header{
 }
 
 .scroll_bg_last {
+	position: relative;
     min-height: 100%;
 	background-color: #EA8A8A;
 	height:800px;
@@ -279,27 +273,26 @@ header{
 /*-----Contact-----*/
 .tb_cell{
 	display: table;
-	width:700px;
+	width:800px;
 	margin:20px auto 40px;
-	text-align: left;
+	text-align: center;
 }
-label{
-	color: #2e0000;
-}
-.tb_cell.row{
+
+.tb_cell .row{
 	display: table-row;
 }
-.tb_cell.row .cell{
+.tb_cell .row .cell{
 	display: table-cell;
 	border:1px solid #f2f2f2;
 	padding: 10px;
 	vertical-align: middle;
+	color: #2e0000;
 }
-.row .cell:nth-child(odd) {
-  width: 100px;
+.tb_cell .row .cell:nth-child(odd) {
+  width: 200px;
 }
 
-.row .cell:nth-child(even){
+.tb_cell .row .cell:nth-child(even){
 	width:600px;
 }
 .mail_form .row .cell{
@@ -314,14 +307,14 @@ label{
 
 input[type="text"],input[type="e-mail"]{
 	height:30px;
-	width: 500px;
+	width: 300px;
 	font-size:16px;
 	background-color: #f2f2f2;
 	margin:5px;
 }
 textarea{
 	height:100px;
-	width:500px;
+	width:580px;
 	font-size: 16px;
 	background-color: #f2f2f2;
 	margin:5px;
@@ -384,7 +377,9 @@ footer{
   width:100%;
   height:65px;
   margin:0px;
-  box-shadow:0 -10px 10px rgba(0,0,0,0.3)
+  box-shadow:0 -10px 10px rgba(0,0,0,0.3);
+  position:relative;
+	z-index: 2;
 }
 footer p{
   text-align: center;
